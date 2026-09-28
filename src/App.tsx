@@ -288,7 +288,7 @@ function AppContent() {
       </nav>}
       {aboutOpen ? <AboutPage onHome={() => { window.history.pushState(null, '', '/'); setAboutOpen(false) }} onContact={() => { window.history.pushState(null, '', '/about#contact-card'); setContactOpen(true) }} /> : <main>
         <MotionSection className="hero section-shell" id="home">
-          <Reveal className="hero-topline"><span>PORTFOLIO / 2025—26</span><span>BASED ON EARTH / WORKING EVERYWHERE</span></Reveal>
+          <Reveal className="hero-topline"><span>PORTFOLIO / 2025—26</span><span>BASED IN THE PHILIPPINES / WORKING EVERYWHERE</span></Reveal>
           <Reveal className="hero-title-wrap"><p className="eyebrow">THE DIGITAL PRACTICE OF HADES</p><h1 className="glitch-title">MAKE IT<br /><span>MATTER.</span></h1></Reveal>
           <Reveal className="hero-bottom"><p>Independent creative developer<br />building considered digital experiences.</p><a className="scroll-cue" href="#about"><ArrowDown size={16} strokeWidth={1.5} /><span>SCROLL TO EXPLORE</span></a><span className="hero-index">001—005</span></Reveal>
           <div className="hero-mark" aria-hidden="true">H<span>↗</span></div>
@@ -307,7 +307,7 @@ function AppContent() {
           })}</div>
         </MotionSection>
         <MotionSection className="projects section-shell" id="projects">
-          <Reveal className="section-heading"><span>03 / SELECTED WORK</span><span>2023—2026</span></Reveal>
+          <Reveal className="section-heading"><span>03 / SELECTED WORK</span><span>2025—2026</span></Reveal>
           <Reveal className="projects-heading"><h2 className="glitch-title">MADE WITH<br /><span>INTENTION.</span></h2><p>A few things shaped by curiosity,<br />collaboration, and a little bit of nerve.</p></Reveal>
           <div className="project-list">{projects.map((project, index) => <ProjectCard key={project.image} project={project} index={index} />)}</div>
         </MotionSection>
@@ -332,24 +332,38 @@ function AboutPage({ onHome, onContact }: { onHome: () => void; onContact: () =>
       <section className="about-page-hero">
         <div className="about-page-meta"><span>ABOUT / HAYDRIAN</span><span>UPDATED / 2026</span></div>
         <div className="about-page-intro">
-          <Reveal className="portrait-holder"><div className="portrait-frame"><span className="portrait-monogram">HC</span><span className="portrait-caption">PORTRAIT / 2026</span><i>14° 35' N<br />120° 59' E</i></div></Reveal>
+          <Reveal className="portrait-holder"><div className="portrait-frame"><img className="portrait-image" src="/images/my-img.png" alt="Portrait of Haydrian Tumbagahon" /><span className="portrait-caption">PORTRAIT / 2026</span><i>14° 35' N<br />120° 59' E</i></div></Reveal>
           <Reveal className="about-page-title"><p className="eyebrow">DESIGNER / DEVELOPER / ALWAYS LEARNING</p><h1 className="glitch-title">HAYDRIAN<br /><span>TUMBAGAHON.</span></h1><p className="about-page-lead">I like making useful things feel considered, clear, and a little more human.</p></Reveal>
         </div>
       </section>
       <section className="about-timeline">
         <Reveal className="section-heading"><span>01 / A SHORT HISTORY</span><span>STILL IN PROGRESS</span></Reveal>
         <div className="timeline-list">
-          <Reveal className="timeline-row"><span>2026 — NOW</span><h2>BUILDING WITH INTENTION</h2><p>Learning by making: turning curiosity into practical digital projects, and getting a little better with every iteration.</p></Reveal>
-          <Reveal className="timeline-row"><span>2024 — 2025</span><h2>FINDING MY TOOLKIT</h2><p>Exploring design and frontend development, learning how thoughtful details and dependable code work together.</p></Reveal>
-          <Reveal className="timeline-row"><span>THE NEXT CHAPTER</span><h2>MORE TO DISCOVER</h2><p>Open to meaningful work, generous collaborators, and problems worth spending time on.</p></Reveal>
+          <Reveal className="timeline-row"><span>NEXT CHAPTER</span><h2>MORE TO DISCOVER</h2><p>I’m excited to keep exploring new skills, technologies, and challenges, and to learn from the different perspectives of other professionals.</p></Reveal>
+          <Reveal className="timeline-row"><span>2025 — 2026</span><h2>FREELANCE TEACHER'S AIDE</h2><p>Supporting students gave me room to bring creativity into learning activities, adapt to different needs, and collaborate with educators. The experience strengthened my communication, patience, and ability to contribute as part of a team.</p></Reveal>
+          <Reveal className="timeline-row"><span>2025 — 2026</span><h2>TECH SUPPORT REPRESENTATIVE</h2><p>My first job introduced me to professional technical support: listening carefully, helping people work through technology issues, and communicating clear next steps. It also gave me a first-hand view of the pace and teamwork of a busy workplace.</p></Reveal>
+          <Reveal className="timeline-row"><span>2024 — 2025</span><h2>TECH SUPPORT & OFFICE SUPPORT INTERN</h2><p>At the DILG branch in SJDM, Bulacan, I helped with technology and office support tasks and got my first close look at a professional office environment. It was a valuable introduction to workplace communication, organization, and supporting day-to-day operations.</p></Reveal>
+        </div>
+      </section>
+      <section className="about-certifications">
+        <Reveal className="section-heading"><span>02 / CERTIFICATIONS</span><span>COURSES & CREDENTIALS</span></Reveal>
+        <div className="certification-panel">
+          <Reveal className="certification-intro"><span>01 — 05</span><h2>PROOF OF<br /><span>PROGRESS.</span></h2><p>A selection of language, networking, and technical support learning milestones.</p></Reveal>
+          <div className="certification-list">
+            <Reveal className="certification-row"><span>01</span><p><a href="https://cert.efset.org/7NgAYc" target="_blank" rel="noreferrer">EF SET Certificate <ArrowUpRight size={13} /></a><small>22 JAN 2026</small></p><span>EF SET</span></Reveal>
+            <Reveal className="certification-row"><span>02</span><p>Getting Started with Cisco Packet Tracer<small>12 APR 2026 · ID: c656fd40-fe75-438d-9515-7ff6f222b2a3</small></p><span>CISCO NETWORKING ACADEMY</span></Reveal>
+            <Reveal className="certification-row"><span>03</span><p>IT Customer Support Basics<small>27 APR 2026 · ID: 1ec69c21-aa74-47d8-acdd-2293e1a6f8f6</small></p><span>CISCO NETWORKING ACADEMY</span></Reveal>
+            <Reveal className="certification-row"><span>04</span><p><a href="https://www.credly.com/badges/58eb3455-a327-4e52-9066-b6ed97b02bc8" target="_blank" rel="noreferrer">Network Support and Security <ArrowUpRight size={13} /></a><small>20 APR 2026</small></p><span>CISCO NETWORKING ACADEMY</span></Reveal>
+            <Reveal className="certification-row"><span>05</span><p>Certificate of Eligibility (COE)<small>27 NOV 2025</small></p><span>CIVIL SERVICE COMMISSION</span></Reveal>
+          </div>
         </div>
       </section>
       <section className="about-personality">
-        <Reveal className="section-heading"><span>02 / OFF THE SCREEN</span><span>THE THINGS THAT KEEP ME CURIOUS</span></Reveal>
+        <Reveal className="section-heading"><span>03 / OFF THE SCREEN</span><span>THE THINGS THAT KEEP ME CURIOUS</span></Reveal>
         <div className="personality-grid">
-          <Reveal className="personality-item"><span>01 / INTERESTS</span><h2>HOW THINGS<br />WORK.</h2><p>Interface design, emerging technology, visual systems, and the small choices that make tools easier to use.</p></Reveal>
-          <Reveal className="personality-item"><span>02 / HOBBIES</span><h2>MAKE TIME<br />TO RESET.</h2><p>Music, games, good food, and getting outside. A change of pace usually brings a fresh perspective back to the work.</p></Reveal>
-          <Reveal className="personality-item"><span>03 / GOAL</span><h2>KEEP<br />GETTING BETTER.</h2><p>Build a body of work that is useful, honest, and made with care, while staying open to what I have not learned yet.</p></Reveal>
+          <Reveal className="personality-item"><span>01 / INTERESTS</span><h2>WHAT'S<br />NEXT?</h2><p>I’m interested in web development with AI, new devices and software, and the ways emerging AI tools can support creative work. I also enjoy learning about practical IT support in an office environment.</p></Reveal>
+          <Reveal className="personality-item"><span>02 / HOBBIES</span><h2>BUILD. PLAY.<br />RIDE.</h2><p>I create websites to test my skills and explore new technologies. I enjoy strategic turn-based games like Reverse: 1999 and Honkai: Star Rail, competitive games like Valorant, and getting out for a bike ride.</p></Reveal>
+          <Reveal className="personality-item"><span>03 / GOAL</span><h2>GROW<br />TOGETHER.</h2><p>I hope to join a team even as I continue learning, build new skills, take on new experiences, and meet promising people who bring energy and fun to working together.</p></Reveal>
         </div>
       </section>
       <section className="about-page-end">
