@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 import { ArrowDown, ArrowUpRight, BriefcaseBusiness, X } from 'lucide-react'
 import type { IconType } from 'react-icons'
-import { FaDiscord, FaFacebookF, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaFacebookF, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import {
   SiCss,
   SiFigma,
@@ -390,7 +390,7 @@ function ContactCard({ onClose }: { onClose: () => void }) {
       <section className="contact-card" role="dialog" aria-modal="true" aria-labelledby="contact-card-title">
         <div className="contact-card-top"><span>H / DIRECT LINE</span><button className="contact-close" type="button" onClick={onClose} aria-label="Close contact card"><X size={19} /></button></div>
         <div className="contact-card-body"><div className="contact-card-identity"><p className="eyebrow">INDEPENDENT DESIGNER & DEVELOPER</p><h2 id="contact-card-title">HAYDRIAN<br /><span>TUMBAGAHON.</span></h2><a className="contact-card-copy contact-email" href="mailto:haydriantumbagahon1205@gmail.com">haydriantumbagahon1205@gmail.com <ArrowUpRight size={17} /></a></div></div>
-        <div className="contact-socials" aria-label="Social links"><a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebookF /></a><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a><a href="https://discord.com/app" target="_blank" rel="noreferrer" aria-label="Discord"><FaDiscord /></a><a href="mailto:hello@hades.dev" aria-label="Email"><ArrowUpRight size={17} /></a></div>
+        <div className="contact-socials" aria-label="Social links"><a href="https://www.facebook.com/haydrian.tumbagahon/" target="_blank" rel="noreferrer" aria-label="Facebook"><FaFacebookF /></a><a href="https://www.instagram.com/htumbagahon/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a><a href="https://github.com/HaydrianTumbagahon" target="_blank" rel="noreferrer" aria-label="GitHub"><FaGithub /></a><a href="https://www.linkedin.com/in/haydrian-c-tumbagahon" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedin /></a><a href="mailto:haydriantumbagahon1205@gmail.com" aria-label="Email"><ArrowUpRight size={17} /></a></div>
         <div className="contact-card-bottom"><span>MANILA, PHILIPPINES</span><span>HAYDRIAN TUMBAGAHON / 2026</span></div>
       </section>
     </div>
