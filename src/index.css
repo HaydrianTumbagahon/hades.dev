@@ -96,22 +96,7 @@ h1, h2, h3, p { margin-top: 0; }
 .contact-content > a { display: flex; align-items: center; gap: 18px; font-size: clamp(44px,8vw,112px); line-height: 1; font-weight: 800; }
 .contact-content > a span { width: clamp(38px,6vw,70px); aspect-ratio: 1; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; transition: color 650ms var(--ease),background 650ms var(--ease),transform 650ms var(--ease),box-shadow 650ms var(--ease); }
 .contact-content > a:hover span { color: var(--black); background: var(--white); transform: rotate(45deg); }
-.contact-support { width: min(820px, calc(100% - 9.2vw)); margin-left: 9.2vw; margin-top: 0; padding-top: 10px; border-top: 1px solid var(--line); }
-.contact-support-row { display: flex; justify-content: space-between; gap: 16px; color: var(--gray); font-size: 9px; padding-bottom: 10px; }
-.contact-support-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 0; }
-.contact-service { min-height: 120px; padding: 12px 10px 10px; background: transparent; border: 0; border-bottom: 1px solid var(--line); transition: opacity 650ms var(--ease), transform 650ms var(--ease); }
-.contact-service:hover { opacity: 1; transform: translateY(-2px); }
-.contact-service span { display: inline-block; margin-bottom: 8px; color: var(--gray); font-size: 9px; }
-.contact-service h3 { margin: 0 0 8px; font-size: 16px; font-weight: 700; }
-.contact-service p { margin: 0; color: #b1b1ad; font-size: 10.5px; line-height: 1.7; }
 .site-footer { min-height: 86px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr 2fr 1fr; gap: 20px; align-items: center; }
-
-@media (max-width: 760px) {
-  .contact-support { width: calc(100% - 46px); margin-left: 23px; }
-  .contact-support-row { flex-direction: column; align-items: flex-start; gap: 6px; padding-bottom: 8px; }
-  .contact-support-grid { grid-template-columns: 1fr; gap: 10px; }
-  .contact-service { min-height: auto; padding: 10px 0 12px; }
-}
 .footer-mark { justify-self: start; }
 .footer-links { display: flex; gap: 20px; }
 .footer-links a, .back-top { color: var(--gray); }

@@ -324,26 +324,6 @@ function AppContent() {
         <MotionSection className="contact section-shell" id="contact">
           <Reveal className="section-heading"><span>04 / GET IN TOUCH</span><span>GOOD THINGS START WITH A HELLO</span></Reveal>
           <Reveal className="contact-content"><p>HAVE A GOOD<br />ONE IN MIND?</p><a href="#contact-card" onClick={openContact}>LET'S TALK<span><ArrowUpRight size={25} /></span></a></Reveal>
-          <Reveal className="contact-support">
-            <div className="contact-support-row"><span>AVAILABLE FOR</span><span>SELECT PROJECTS / 2026</span></div>
-            <div className="contact-support-grid">
-              <div className="contact-service">
-                <span>01</span>
-                <h3>STRATEGY</h3>
-                <p>Product thinking, positioning, and thoughtful digital direction.</p>
-              </div>
-              <div className="contact-service">
-                <span>02</span>
-                <h3>DESIGN</h3>
-                <p>Interfaces, brand moments, and experiences that feel clear and alive.</p>
-              </div>
-              <div className="contact-service">
-                <span>03</span>
-                <h3>BUILD</h3>
-                <p>Responsive front-end development with attention to detail and polish.</p>
-              </div>
-            </div>
-          </Reveal>
           <Reveal className="footer-reveal"><footer className="site-footer"><a className="footer-mark" href="#home">Hades.dev</a><div className="footer-links"><a href="https://github.com/HaydrianTumbagahon" aria-label="GitHub" target="_blank" rel="noreferrer"><FaGithub size={17} /></a><a href="https://www.linkedin.com/in/haydrian-c-tumbagahon" aria-label="LinkedIn" target="_blank" rel="noreferrer"><FaLinkedin size={17} /></a><a href="https://ph.jobstreet.com/profiles/haydrian-tumbagahon-62LGt0PkQD" aria-label="JobStreet" target="_blank" rel="noreferrer"><BriefcaseBusiness size={17} /></a></div><p>© 2026 HADES. MADE WITH INTENTION.</p><a className="back-top" href="#home">BACK TO TOP ↑</a></footer></Reveal>
         </MotionSection>
       </main>}
