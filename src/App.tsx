@@ -276,6 +276,19 @@ function AppContent() {
     }
   }, [contactOpen])
 
+  useEffect(() => {
+    document.documentElement.classList.toggle('mobile-menu-open', menuOpen)
+    document.body.classList.toggle('mobile-menu-open', menuOpen)
+    if (menuOpen) lenis?.stop()
+    else lenis?.start()
+
+    return () => {
+      document.documentElement.classList.remove('mobile-menu-open')
+      document.body.classList.remove('mobile-menu-open')
+      lenis?.start()
+    }
+  }, [lenis, menuOpen])
+
   return (
     <ReactLenis root options={{ lerp: 0.075, wheelMultiplier: 0.9, smoothWheel: true, syncTouch: false, autoRaf: true }}>
       <ScrollProgress />
@@ -285,7 +298,6 @@ function AppContent() {
         <a className="wordmark" href={aboutOpen ? '/' : '#home'} onClick={aboutOpen ? (event) => { event.preventDefault(); closeMenu(); window.history.pushState(null, '', '/'); setAboutOpen(false); lenis?.scrollTo(0, { immediate: true }) } : closeMenu} aria-label="Hades home">Hades.dev</a>
         <div className="header-meta"><span>INDEPENDENT DESIGNER & DEVELOPER</span><span>AVAILABLE FOR SELECT PROJECTS</span></div>
         <button className="menu-toggle" type="button" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen}>
-          <span className="menu-toggle-label">{menuOpen ? 'CLOSE' : 'MENU'}</span>
           <svg viewBox="0 0 32 32" aria-hidden="true"><path className="menu-line menu-line-top" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22" /><path className="menu-line" d="M7 16 27 16" /></svg>
         </button>
       </header>
@@ -305,7 +317,7 @@ function AppContent() {
         </MotionSection>
         <MotionSection className="about section-shell" id="about">
           <Reveal className="section-heading"><span>01 / ABOUT</span><span>A PRACTICE IN PROGRESS</span></Reveal>
-          <div className="about-grid"><Reveal><h2 className="glitch-title">GOOD WORK<br />STARTS WITH<br /><span>GOOD QUESTIONS.</span></h2></Reveal><Reveal className="about-copy"><p className="lead">I bring thoughtful ideas to life through design and code.</p><p>From the first sketch to the final interaction, I care about the details that make a digital experience feel clear, human, and unmistakably its own.</p><a className="text-link" href="/about" onClick={openAbout}>A LITTLE MORE ABOUT ME <ArrowUpRight size={15} /></a></Reveal></div>
+          <div className="about-grid"><Reveal><h2 className="glitch-title">GOOD WORK<br />STARTS WITH<br /><span>GOOD QUESTIONS.</span></h2></Reveal><Reveal className="about-copy"><p className="lead">I bring thoughtful ideas to life through design and code.</p><p>I like taking an idea from a rough sketch to something people can actually use, while making sure the small details feel right along the way.</p><a className="text-link" href="/about" onClick={openAbout}>A LITTLE MORE ABOUT ME <ArrowUpRight size={15} /></a></Reveal></div>
           <Reveal className="about-stamp"><span>INDEPENDENT<br />BY DESIGN</span><span>H / 26</span></Reveal>
         </MotionSection>
         <MotionSection className="skills section-shell" id="skills">
