@@ -36,9 +36,9 @@ const capabilities: { number: string; title: string; summary: string; technologi
 ]
 
 const projects = [
-  { name: 'Spendly', category: 'FINANCE APP', year: '2025', image: 'finance-app', href: 'https://rvn-finance-app.vercel.app/', fallback: 'TRACK EVERY\nLITTLE THING' },
-  { name: "that's my type", category: 'TYPING TEST APP', year: '2025', image: 'typetest-app', href: 'https://rvn-typing-test.vercel.app/', fallback: 'FIND YOUR\nRHYTHM' },
-  { name: 'savr', category: 'FOOD APP', year: '2025', image: 'food-app', href: 'https://rvn-savr.vercel.app/', fallback: 'GOOD FOOD.\nLESS WASTE.' },
+  { name: 'Spendly', category: 'FINANCE APP', year: '2026', image: 'finance-app', href: 'https://rvn-finance-app.vercel.app/', fallback: 'TRACK EVERY\nLITTLE THING' },
+  { name: 'JustMyType', category: 'TYPING TEST APP', year: '2025', image: 'typetest-app', href: 'https://rvn-typing-test.vercel.app/', fallback: 'FIND YOUR\nRHYTHM' },
+  { name: 'Kulinarya', category: 'FOOD APP', year: '2026', image: 'kulinarya', href: 'https://hades-kulinarya.vercel.app/', fallback: 'GOOD FOOD.\nLESS WASTE.' },
   { name: 'manga translator', category: 'TRANSLATION APP', year: '2025', image: 'translate-app', href: 'https://rvn-manga-translator.vercel.app/', fallback: 'READ BEYOND\nTHE PANEL' },
 ]
 
