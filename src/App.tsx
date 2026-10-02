@@ -36,7 +36,7 @@ const capabilities: { number: string; title: string; summary: string; technologi
 ]
 
 const projects = [
-  { name: 'Spendly', category: 'FINANCE APP', year: '2026', image: 'finance-app', href: 'https://rvn-finance-app.vercel.app/', fallback: 'TRACK EVERY\nLITTLE THING' },
+  { name: 'Spendly', category: 'FINANCE APP', year: '2026', image: 'finance-app', href: 'https://hades-spendly.vercel.app/', fallback: 'TRACK EVERY\nLITTLE THING' },
   { name: 'JustMyType', category: 'TYPING TEST APP', year: '2025', image: 'typetest-app', href: 'https://rvn-typing-test.vercel.app/', fallback: 'FIND YOUR\nRHYTHM' },
   { name: 'Kulinarya', category: 'FOOD APP', year: '2026', image: 'kulinarya', href: 'https://hades-kulinarya.vercel.app/', fallback: 'GOOD FOOD.\nLESS WASTE.' },
   { name: 'manga translator', category: 'TRANSLATION APP', year: '2025', image: 'translate-app', href: 'https://hades-manga-translator.vercel.app/', fallback: 'READ BEYOND\nTHE PANEL' },
