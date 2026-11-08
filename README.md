@@ -28,13 +28,6 @@ This portfolio was designed to feel minimal, bold, and polished while still bein
 
 I developed this site while practicing my skills and using AI as a learning tool to help me work faster, test ideas, and improve the structure of the project. It was part of my process of building cleaner interfaces and getting more comfortable with front-end work, animation, and responsive design.
 
-## Local development
-
-```sh
-npm install
-npm run dev
-npm run build
-```
 
 ## Project structure
 
